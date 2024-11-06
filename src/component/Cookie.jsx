@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const CookiePolicy = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);                                                                                            }, []);
+
   return (
     <div className="p-24 text-gray-800">
       <h1 className="text-3xl font-semibold mb-4">IELTS Website Cookie Policy</h1>
       <p className="mb-4">
         Your privacy is important to us, and this Cookie Policy explains how we use cookies and similar technologies on our IELTS website. By using our site, you consent to our use of cookies as described in this policy.
-       </p>
+      </p>
       <section className="mb-6">
         <h2 className="text-2xl font-semibold mb-2">1. What Are Cookies?</h2>
         <p>
@@ -31,10 +34,8 @@ const CookiePolicy = () => {
         </ul>
       </section>
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold mb-2">3. How We Use Cookies</h2>
-        <p>
-          We use cookies to:
-        </p>
+        <h2 className="text-2xl font-semibold text-right mb-2">3. How We Use Cookies</h2>
+        <p>We use cookies to:</p>
         <ul className="list-disc pl-5 space-y-2">
           <li>Remember your login details and preferences</li>
           <li>Analyze website traffic to improve functionality</li>
@@ -71,5 +72,3 @@ const CookiePolicy = () => {
 };
 
 export default CookiePolicy;
-
-

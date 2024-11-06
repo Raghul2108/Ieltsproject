@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Info = () => {
-  return (
+  useEffect(() => {
+    window.scrollTo(0, 0); }, []);
+    return (
     <div className="max-w-7xl mx-auto p-20">
       <h1 className="text-3xl font-bold mb-7">IELTS Information</h1>
-      
+
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-2">General Information</h2>
         <p className="text-gray-700">
@@ -13,39 +15,41 @@ const Info = () => {
       </section>
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-2">Test Formats</h2>
-        <ul className="list-disc list-inside gap-4">
-       Test Format:  
-      <li>
-
-        Listening:
-
-        Duration: 30 minutes
-        Includes four sections, each with 10 questions.
-        </li>
-<li>
-        Reading:
-
-        Duration: 60 minutes
-        Contains three sections, with different texts and a total of 40 questions.
-        </li>
-
-        <li>Writing:
-
-        Duration: 60 minutes
-        Comprises two tasks: Task 1 (150 words) and Task 2 (250 words).
-        </li>
-
-       <li> Speaking:
-
-        Duration: 11–14 minutes
-        Consists of a face-to-face interview with an examiner, divided into three parts.
-        </li>
+        <ul className="list-disc list-inside">
+          <li>
+            <strong>Listening:</strong>
+            <br />
+            Duration: 30 minutes
+            <br />
+            Includes four sections, each with 10 questions.
+          </li>
+          <li>
+            <strong>Reading:</strong>
+            <br />
+            Duration: 60 minutes
+            <br />
+            Contains three sections, with different texts and a total of 40 questions.
+          </li>
+          <li>
+            <strong>Writing:</strong>
+            <br />
+            Duration: 60 minutes
+            <br />
+            Comprises two tasks: Task 1 (150 words) and Task 2 (250 words).
+          </li>
+          <li>
+            <strong>Speaking:</strong>
+            <br />
+            Duration: 11–14 minutes
+            <br />
+            Consists of a face-to-face interview with an examiner, divided into three parts.
+          </li>
         </ul>
       </section>
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-2">Preparation Tips</h2>
         <p className="text-gray-700">
-          - Familiarize yourself with the test format. 
+          - Familiarize yourself with the test format.
           <br />
           - Practice your listening, reading, writing, and speaking skills regularly.
           <br />

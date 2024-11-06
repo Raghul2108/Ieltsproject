@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const PrivacyPolicy = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); }, []);
+
   return (
-    <div className=" text-gray-800 p-24">
+    <div className="text-gray-800 p-24">
       <h1 className="text-3xl font-bold mb-6">Privacy Policy for [IELTS-Leetscholar]</h1>
       <section className="mb-6">
         <h2 className="text-2xl font-semibold mb-2">1. Introduction</h2>
         <p>
-          
           This privacy policy outlines how [IELTS-Leetscholar] ("we," "us," or "our") collects, uses,
           discloses, and protects your information when you visit our website [Insert URL] (the "Site").
           We are committed to safeguarding your privacy and ensuring your personal information is handled responsibly.
@@ -35,9 +37,7 @@ const PrivacyPolicy = () => {
       </section>
       <section className="mb-6">
         <h2 className="text-2xl font-semibold mb-2">3. How We Use Your Information</h2>
-        <p>
-          We may use the information we collect for various purposes, including:
-        </p>
+        <p>We may use the information we collect for various purposes, including:</p>
         <ul className="list-disc list-inside">
           <li>To provide and maintain our services</li>
           <li>To communicate with you, including sending newsletters and updates</li>

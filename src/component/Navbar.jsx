@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => (
   <nav className="bg-indigo-900 border-b-2 border-red-400  text-gray-50 p-5 fixed top-0 w-full z-20 shadow-lg">
-    <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center">
       <div className="flex flex-col items-start">
-        <h1 className="text-2xl font-bold px-11">IELTS - Leetscholar</h1>
-        <p className="text-sm font-light px-11">Preparation For Life</p>
+      <h1 className="text-2xl font-bold px-11">IELTS - Leetscholar</h1>
+      <p className="text-sm font-light px-11">Preparation For Life</p>
       </div>
       <div className="flex space-x-8">
         <div className="relative group">
@@ -25,7 +25,7 @@ const Navbar = () => (
         <div className="relative group">
           <Link to="/IELTS-Test" className="text-gray-100 hover:text-blue-300 font-medium flex items-center">
             IELTS Test
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg xmlns="http: //www.w3.org/2000/svg" className="h-4 w-4 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
             </svg>
           </Link>
